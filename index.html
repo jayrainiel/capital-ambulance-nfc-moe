@@ -14,7 +14,8 @@
     --navy:#2b2b30;
     --navy-deep:#1c1c20;
     --navy-soft:#33333a;
-    --sheet-bg:#37373e;
+    --sheet-bg:#e9e9ec;
+    --sheet-text:#1c1c20;
     --gold:#e8c270;
     --cream:#f3e9d4;
     --white:#ffffff;
@@ -56,7 +57,7 @@
   .hero::after{
     content:'';
     position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(20,20,22,0.05) 0%, rgba(24,24,26,0.35) 50%, rgba(34,34,38,0.8) 78%, var(--sheet-bg) 100%);
+    background:linear-gradient(180deg, rgba(20,20,22,0.05) 0%, rgba(24,24,26,0.35) 48%, rgba(60,60,64,0.7) 68%, rgba(160,160,164,0.55) 86%, var(--sheet-bg) 100%);
   }
 
   /* AVATAR */
@@ -100,6 +101,7 @@
     font-size:25px;
     font-weight:800;
     letter-spacing:.2px;
+    color:var(--sheet-text);
   }
   .title-row{
     display:flex;
