@@ -71,10 +71,18 @@
   .avatar{
     width:152px; height:152px;
     border-radius:50%;
-    object-fit:cover;
     border:3px solid var(--gold);
     box-shadow:0 12px 30px rgba(0,0,0,.5);
     background:#111;
+    overflow:hidden;
+    position:relative;
+  }
+  .avatar img{
+    position:absolute;
+    top:50%; left:50%;
+    width:118%;
+    height:auto;
+    transform:translate(-50%, -44%);
   }
 
   /* SHEET */
@@ -313,7 +321,7 @@
   <div class="hero"></div>
 
   <div class="avatar-wrap">
-    <img class="avatar" src="assets/moe.jpg" alt="Mohammad Alhaj Younes">
+    <div class="avatar"><img src="assets/moe.jpg" alt="Mohammad Alhaj Younes"></div>
   </div>
 
   <div class="sheet">
